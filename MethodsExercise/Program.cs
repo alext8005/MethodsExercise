@@ -31,13 +31,17 @@ namespace MethodsExercise
             string DogWalk = Console.ReadLine();
 
             // Exercise 2: Math operations methods
-            int a = 5;
-            int b = 10;
+            int a = 10;
+            int b = 5;
             int addition = AddingTwoNumbers(a, b);
             int multiplication = MultiplyTwoNumbers(a, b);
+            int substraction= SubsTwoNumbers(a, b);
+            int division = DivTwoNumbers(a,b);
 
             Console.WriteLine($"When a equals {a}, and b equals {b}, when added it equals {addition}.");
-            Console.WriteLine($"But when {a} is multiplied by {b}, the result is equal to {multiplication}.");
+            Console.WriteLine($"In a substraction, when {b} is substracted from {a}, the result is {substraction}.");
+            Console.WriteLine($"When {a} is multiplied by {b}, the result is equal to {multiplication}.");
+            Console.WriteLine($"But when {a} is divided by {b}, the result is equal to {division}.");
         }
 
         public static int AddingTwoNumbers(int a, int b)
@@ -49,5 +53,16 @@ namespace MethodsExercise
         {
             return a * b;
         }
+
+        static int SubsTwoNumbers(int a, int b)
+        {
+            return a - b;
+        }
+
+        static int DivTwoNumbers(int a, int b)
+        {
+            return a / b;
+        }
     }
+    
 }
